@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BarberApp.Views.PanelPrincipal"
+             Title="PanelPrincipal">
+    <VerticalStackLayout>
+        <StackLayout Padding="10" Spacing="20">
+            <!-- Resumen de ingresos -->
+            <Label Text="Ingresos Generados Hoy:"
+               FontSize="18"
+               HorizontalOptions="Center" />
+            <Label x:Name="lblIngresos"
+               Text="$0.00"
+               FontSize="24"
+               HorizontalOptions="Center"
+               TextColor="Green" />
+
+            <!-- Resumen de cortes -->
+            <Label Text="Cortes del Día:"
+               FontSize="18"
+               HorizontalOptions="Center" />
+            <Label x:Name="lblCortes"
+               Text="0"
+               FontSize="24"
+               HorizontalOptions="Center"
+               TextColor="Orange" />
+        </StackLayout>
+
+        <!-- Botones de acceso rápido -->
+        <StackLayout Padding="20" Spacing="15">
+            <Button Text="Registrar Corte"
+                FontSize="18"
+                Clicked="OnRegistrarCorteClicked" />
+            <Button Text="Historial de Servicios"
+                FontSize="18"
+                Clicked="OnHistorialClicked" />
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

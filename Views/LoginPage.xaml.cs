@@ -41,7 +41,6 @@ public partial class LoginPage : ContentPage
                 App.UsuarioActual = usuarioAutenticado;
                 await Navigation.PushAsync(new PanelPrincipal());
 
-                await Navigation.PushAsync(new PanelPrincipal());
             }
             else
             {
